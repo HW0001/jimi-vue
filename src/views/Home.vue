@@ -1,11 +1,12 @@
 <template>
-  <div>主页</div>
-  <menu-nav />
+  <layout><div>home</div></layout>
 </template>
 
 <script lang='ts'>
+import Layout from "@/components/Layout.vue";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {Layout}
 }
 </script>
 

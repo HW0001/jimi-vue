@@ -1,11 +1,12 @@
 <template>
-  <div>标签</div>
-  <menu-nav />
+  <layout><div>label</div></layout>
 </template>
 
 <script lang='ts'>
+import Layout from "@/components/Layout.vue";
 export default {
-  name: "Labels"
+  name: "Labels",
+  components: {Layout}
 }
 </script>
 

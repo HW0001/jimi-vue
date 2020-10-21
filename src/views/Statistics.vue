@@ -1,11 +1,12 @@
 <template>
-<div>tongji</div>
-  <menu-nav />
+  <layout><div>statistics</div></layout>layout/>
 </template>
 
 <script lang='ts'>
+import Layout from "@/components/Layout.vue";
 export default {
-name: "Statistics"
+name: "Statistics",
+  components: {Layout}
 }
 </script>
 
