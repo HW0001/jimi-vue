@@ -14,7 +14,8 @@ module.exports = {
             .loader('svg-sprite-loader')
             .options({
                 symbolId: 'icon-[name]'
-            })
+            }).end().use('svgo-loader').loader('svgo-loader')
+            .tap(options => ({...options, plugins: [{removeAttrs: {attrs: 'fill'}}]})).end()
         const fileRule = config.module.rule('file')
         fileRule.uses.clear()
         fileRule
