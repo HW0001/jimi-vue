@@ -8,4 +8,8 @@ export default {
 </script>
 <style lang="scss">
 @import "~@/assets/style/global.css";
+@import "~@/assets/style/helper.scss";
+body{
+  font-family: $font-hei;
+}
 </style>
